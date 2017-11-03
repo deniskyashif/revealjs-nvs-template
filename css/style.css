@@ -88,3 +88,85 @@ h1:after, h2:after, h3:after, h4:after, h5:after {
 .reveal .color-green * {
     color: green;
 }
+
+.reveal .circle-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.reveal .circle {
+    position: absolute;
+    font-size: 0.6em;
+    background-color: #0089CE;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    line-height: 150px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.reveal .circle.center {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    font-size: 1em;
+    height: 300px;
+    width: 300px;
+    line-height: 300px;
+    background-color: #374959;
+}
+
+.reveal .circle.top {
+    position: absolute;
+    top: calc(50% - 75px - 200px - 50px);
+    left: calc(50% - 75px);
+}
+
+.reveal .circle.bottom {
+    position: absolute;
+    top: calc(50% - 75px + 200px + 50px);
+    left: calc(50% - 75px);
+}
+
+.reveal .circle.left {
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px - 200px - 50px);
+
+}
+
+.reveal .circle.right {
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px + 200px + 50px);
+}
+
+.reveal .circle.top-left {
+    position: absolute;
+    top: calc(50% - 75px - 200px);
+    left: calc(50% - 75px - 200px);
+}
+
+.reveal .circle.top-right {
+    position: absolute;
+    top: calc(50% - 75px - 200px);
+    left: calc(50% - 75px + 200px);
+}
+
+.reveal .circle.bottom-left {
+    position: absolute;
+    top: calc(50% - 75px + 200px);
+    left: calc(50% - 75px - 200px);
+}
+
+.reveal .circle.bottom-right {
+    position: absolute;
+    top: calc(50% - 75px + 200px);
+    left: calc(50% - 75px + 200px);
+}
