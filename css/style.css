@@ -170,3 +170,19 @@ h1:after, h2:after, h3:after, h4:after, h5:after {
     top: calc(50% - 75px + 200px);
     left: calc(50% - 75px + 200px);
 }
+
+.reveal .slides section .fragment.highlight-strikethrough,
+.reveal .slides section .fragment.highlight-current-strikethrough {
+    opacity: 1;
+    visibility: visible;
+}
+
+.reveal .slides section .fragment.highlight-strikethrough.visible {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.reveal .slides section .fragment.highlight-current-strikethrough.current-fragment {
+    color: gray;
+    text-decoration: line-through;
+}
